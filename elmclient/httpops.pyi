@@ -105,17 +105,17 @@ class HttpOperations_Mixin:
     def execute_get_json(self, reluri: str, *, params: ParamsType = None,
                          headers: Optional[Dict[str, str]] = None,
                          return_etag: bool = False,
-                         **kwargs: Any) -> requests.Response: ...
+                         **kwargs: Any) -> JSONType: ...
     @overload
     def execute_get_json(self, reluri: str, *, params: ParamsType = None,
                          headers: Optional[Dict[str, str]] = None,
                          return_etag: bool = True,
-                         **kwargs: Any) -> Tuple[requests.Response, str]: ...
+                         **kwargs: Any) -> Tuple[JSONType, str]: ...
     # default
     def execute_get_json(self, reluri: str, *, params: ParamsType = None,
                          headers: Optional[Dict[str, str]] = None,
                          return_etag: bool = False,
-                         **kwargs: Any) -> Union[requests.Response, Tuple[requests.Response, str]]: ...
+                         **kwargs: Any) -> Union[JSONType, Tuple[JSONType, str]]: ...
     @overload
     def execute_get_json_soap(self, reluri: str, *, params: ParamsType = None,
                               headers: Optional[Dict[str, str]] = None,
