@@ -1,0 +1,9 @@
+*.pyc
+.web_cache
+.venv
+*.log
+logs
+.cookies
+build
+dist
+.mypy_cache/*
