@@ -1,3 +1,4 @@
+from lxml import etree as ET
 from typing import Any, Dict, List, Optional, Tuple, Union, Mapping, Iterable, BinaryIO
 
 JSONType = Union[dict[str, Any], list[Any], str, int, float, bool, None]
@@ -9,6 +10,8 @@ RequestDataType = Union[
     bytearray,
     BinaryIO, 
     Iterable[bytes],
+    ET.Element,
+    ET.ElementTree
     None,
 ]
 ParamValue = Union[str, bytes, int, float, bool, None]
