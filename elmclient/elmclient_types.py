@@ -11,7 +11,7 @@ RequestDataType = Union[
     BinaryIO, 
     Iterable[bytes],
     ET.Element,
-    ET.ElementTree
+    ET.ElementTree,
     None,
 ]
 ParamValue = Union[str, bytes, int, float, bool, None]
