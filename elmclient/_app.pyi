@@ -73,7 +73,7 @@ class _App(httpops.HttpOperations_Mixin, _validate.Validate_Mixin):
         self,
         factoriesxml: ET.ElementTree,
         resource_type: str,
-        context: Optional[[_App],
+        context: Optional[[_App]],
         return_shapes: bool = False
     ) -> str: ...
     @overload
